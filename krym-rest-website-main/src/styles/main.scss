@@ -1,0 +1,54 @@
+@import './fonts.scss';
+@import './vars.scss';
+@import './mixins&patterns.scss';
+
+@import './header.scss';
+
+.container {
+  max-width: $container-w;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+html.scroll-active{
+  position: relative;
+  overflow: hidden;
+
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+html.scroll-active {
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+html.scroll-active {
+  body {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+
+@import './media/header-media.scss';

@@ -1,0 +1,73 @@
+@media screen and (max-width: 767px) {
+  .burger-company__info, .burger-phone, .burger-link {
+    font-size: 16px;
+  }
+
+  .header-btn {
+    padding: 0px 20px;
+
+    .order-text {
+      display: none;
+    }
+
+    .arrow {
+      margin-left: 0px;
+    }
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .burger-open {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .burger-content {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .burger-close__btn {
+    left: -53px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .burger-company__info, .burger-phone, .burger-link {
+    font-size: 15px;
+  }
+
+  .lists-block {
+    grid-template-columns: 1fr;
+  }
+
+  .burger-down__contacts {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+  }
+
+  .burger-order-btn {
+    width: 100%
+  }
+
+  .burger-list-item {
+    margin-bottom: 12px;
+  }
+
+  .second-burgerList {
+    margin-top: 12px;
+  }
+
+  .lists-block {
+    padding-bottom: 20px;
+  }
+
+  .burger-company__infoBlock, .phone-block {
+    margin-bottom: 15px;
+  }
+}
+
