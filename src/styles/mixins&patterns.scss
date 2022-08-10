@@ -1,0 +1,21 @@
+@mixin fontz($ff, $fw, $fs, $fst) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  font-style: $fst;
+}
+
+%section-title {
+  @include fontz('OpenSans', 400, 50px, normal)
+}
+
+%book-btn-filled {
+  @include fontz('OpenSans', 400, 50px, normal);
+  background: #4567AA;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 45px;
+}

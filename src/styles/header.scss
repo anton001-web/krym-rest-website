@@ -1,0 +1,176 @@
+//main header
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-btn {
+  @extend %book-btn-filled;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .arrow {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+}
+
+.circleLogo-block {
+  border-radius: 50%;
+  padding: 15px;
+  position: relative;
+  top: 20px;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-open {
+  background-color: #fff;
+  border: none;
+  margin-right: 40px;
+}
+
+.burger-open__bar {
+  margin: 4px;
+  height: 3px;
+  width: 30px;
+  display: block;
+  background-color: $main-blue;
+}
+
+.header-leftSide-info {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-top: 6px;
+  }
+}
+
+// burger menu
+
+.hidden-burgerBlock {
+  transition: left .4s;
+  padding-top: 17px;
+  position: fixed;
+  background-color: #fff;
+  height: 100%;
+  z-index: 9000;
+  width: 100%;
+  top: 0;
+  left: -120%;
+}
+
+.burger-content {
+  margin-left: 60px;
+  padding: 0px $gutter-default;
+  position: relative;
+}
+
+.lists-block {
+  display: grid;
+  margin-top: 25px;
+  padding-bottom: 50px;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid #4567AA;
+}
+
+.first-burgerList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.second-burgerList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.burger-list-item {
+  list-style: none;
+  margin-bottom: 25px;
+
+  &[data-nm] {
+    margin-bottom: 0px;
+  }
+}
+
+.burger-link {
+  @include fontz('OpenSans', 400, 20px, normal);
+  color: $second-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.burger-order-btn {
+  width: 85%;
+  @extend %book-btn-filled;
+}
+
+.burger-content-grid {
+  max-width: 660px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.burger-down__contacts {
+  padding-top: $gutter-default;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.burger-phone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $main-blue;
+  @include fontz('OpenSans', 400, 20px, normal);
+
+  img {
+    margin-right: 15px;
+  }
+}
+
+.burger-company__infoBlock {
+
+}
+
+.burger-company__info {
+  @include fontz('OpenSans', 400, 20px, normal);
+  color: $main-blue;
+}
+
+.burger-media__list {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 27px;
+    cursor: pointer;
+  }
+}
+
+.burger-close__btn {
+  position: absolute;
+  border: none;
+  background-color: #fff;
+  right: 50px;
+  top: -6px;
+  width: 40px;
+  height: 40px;
+  color: $main-blue;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden-burgerBlock.burger-active {
+  left: 0;
+}
