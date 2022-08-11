@@ -1,8 +1,10 @@
 @import './fonts.scss';
 @import './vars.scss';
+@import "~reset-css/reset.css";
 @import './mixins&patterns.scss';
 
 @import './header.scss';
+@import './section1.scss';
 
 .container {
   max-width: $container-w;
@@ -52,3 +54,4 @@ html.scroll-active {
 
 
 @import './media/header-media.scss';
+@import './media/section1-media.scss';

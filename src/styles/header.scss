@@ -22,11 +22,13 @@
   padding: 15px;
   position: relative;
   top: 20px;
-  width: 50px;
+  width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+
 }
 
 .burger-open {
@@ -68,7 +70,7 @@
 
 .burger-content {
   margin-left: 60px;
-  padding: 0px $gutter-default;
+  padding: 15px $gutter-default;
   position: relative;
 }
 
@@ -161,7 +163,7 @@
   border: none;
   background-color: #fff;
   right: 50px;
-  top: -6px;
+  top: 7px;
   width: 40px;
   height: 40px;
   color: $main-blue;

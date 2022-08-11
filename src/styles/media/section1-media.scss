@@ -1,0 +1,26 @@
+@media screen and (max-width: 767px) {
+  .room-search__section-title {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .room-search__date-picker__block {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .room-search__section-body {
+    justify-content: start;
+  }
+
+  .room-search__section-title {
+    margin-top: 80px;
+    font-size: 40px;
+  }
+
+  .room-search__section-body {
+    min-height: 50vh;
+  }
+}
