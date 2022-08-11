@@ -32,7 +32,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border-right: 1px solid #4567AA;
   padding: 15px 20px;
   @include fontz('Forum', 400, 16px, normal);
 
@@ -73,7 +72,8 @@
   align-items: center;
   width: 255px;
   padding: 15px 20px;
-  border-right: 1px solid #4567AA;
+  border-right: 1px solid $main-blue;
+  border-left: 1px solid $main-blue;
   @include fontz('Forum', 400, 16px, normal);
 
   img {

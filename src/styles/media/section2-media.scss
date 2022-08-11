@@ -1,0 +1,113 @@
+@media screen and (max-width: 1400px) {
+  .rooms-list__room-info__block {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .rooms-list__btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .rooms-list__room-info__block {
+    font-size: 15px;
+  }
+
+  .rooms-list__btn {
+    font-size: 10px;
+    padding: 7px 10px;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .rooms-swiper
+  .swiper-button-next {
+    right: 29%;
+    padding: 15px;
+    background-size: 30px;
+  }
+
+  .rooms-list__btn {
+    font-size: 8px;
+    padding: 5px 5px;
+  }
+
+  .rooms-swiper
+  .swiper-button-prev {
+    padding: 15px;
+    left: 29%;
+    background-size: 30px;
+  }
+
+  .room-people {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .rooms-list__room-info {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  .room-type {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rooms-list__subTitle {
+    font-size: 20px;
+  }
+
+  .room-btns {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .rooms-list__btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .rooms-swiper {
+    overflow: visible !important;
+  }
+
+  .rooms-swiper
+  .swiper-button-next {
+    padding: 10px;
+    background-size: 20px;
+    right: -20px;
+  }
+
+  .rooms-swiper
+  .swiper-button-prev {
+    padding: 10px;
+    background-size: 20px;
+    left: -20px;
+  }
+
+  .rooms-list__room-info__block {
+    span {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rooms-list__btn {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+}

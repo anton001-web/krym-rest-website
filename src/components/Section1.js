@@ -1,6 +1,7 @@
 import React, {forwardRef, useEffect, useState} from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
+import {Swiper, SwiperSlide} from "swiper/react";
 
 const CustomDatePicker = forwardRef(({ value, onClick, startD, endD}, ref) => (
     <div className="custom-date-picker" onClick={onClick} ref={ref}>

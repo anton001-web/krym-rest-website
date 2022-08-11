@@ -3,8 +3,10 @@
 @import "~reset-css/reset.css";
 @import './mixins&patterns.scss';
 
+
 @import './header.scss';
 @import './section1.scss';
+@import './section2.scss';
 
 .container {
   max-width: $container-w;
@@ -52,6 +54,18 @@ html.scroll-active {
   }
 }
 
+.title {
+  @include fontz('Forum', 400, 50px, normal);
+  color: $main-black;
+}
+
 
 @import './media/header-media.scss';
 @import './media/section1-media.scss';
+@import './media/section2-media.scss';
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 38px;
+  }
+}

@@ -1,0 +1,145 @@
+.rooms-list__section {
+  margin-top: $section-m;
+}
+
+.rooms-list__section-body {
+  padding: $gutter-default;
+}
+
+.rooms-list__title-block {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.rooms-list__title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+
+  span {
+    text-align: center;
+  }
+}
+
+.rooms-list__imgL-tit {
+  width: 17%;
+  object-fit: cover;
+
+}
+.rooms-list__imgR-tit {
+  width: 17%;
+  object-fit: cover;
+}
+
+.rooms-list__subTitle {
+  margin-top: 15px;
+  @include fontz('OpenSans', 400, 30px, normal);
+  color: $main-black;
+}
+
+.rooms-list__room {
+  background: #F5F5F5;
+  border-radius: 50px 50px 0px 0px;
+  padding: $gutter-default;
+
+  img {
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.rooms-list__room-info__block {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  @include fontz('OpenSans', 400, 20px, normal);
+  color: $main-blue;
+}
+
+.room-type {
+  padding-left: 10px;
+}
+
+.room-area {
+  border-right: 1px solid $main-blue;
+  border-left: 1px solid $main-blue;
+}
+
+.room-people {
+  border-right: 1px solid $main-blue;
+
+  img {
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.room-view, .room-people, .room-area {
+  padding: 0px 10px;
+}
+
+.rooms-swiper
+.swiper-button-prev {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  left: 30.7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: $main-orange;
+  background-image: url("../assets/images/left-arrow.png");
+  background-size: 40px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.rooms-swiper
+.swiper-button-next {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  right: 30.7%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: $main-orange;
+  background-image: url("../assets/images/right-arrow.png");
+  background-size: 40px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+}
+
+.room-btns {
+  margin-top: $gutter-default;
+  display: flex;
+
+}
+
+.book-room__btn {
+  @extend %book-btn-filled;
+  margin-right: 10px;
+  width: 200px;
+  padding: 10px 20px;
+}
+
+.detail-room__btn {
+  @extend %book-btn-outline;
+  width: 200px;
+  padding: 10px 20px;
+}
