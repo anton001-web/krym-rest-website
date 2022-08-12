@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux";
 import {toggleBurger} from "../store/actions";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const dispatch = useDispatch()
@@ -25,6 +26,10 @@ const Header = () => {
         }
     }, [visible])
 
+    const menuDisable = () => {
+
+    }
+
     return (
         <header className='header'>
             <div className='container'>
@@ -35,7 +40,7 @@ const Header = () => {
                             <span className='burger-open__bar'></span>
                             <span className='burger-open__bar'></span>
                         </button>
-                        <img src="./assets/images/logo.png" className='header-logo'/>
+                        <Link to='/'><img src="./assets/images/logo.png" className='header-logo' alt='logo'/></Link>
                     </div>
                     <div className='circleLogo-block'>
                         <img src="../assets/images/circleLogo.png" alt="logo" className='circleLogo'/>
@@ -49,11 +54,11 @@ const Header = () => {
                 <div className='container'>
                     <div className='burger-content'>
                         <button className='burger-close__btn' onClick={() => handleBurger()}>&times;</button>
-                        <img src="./assets/images/logo.png" alt=""/>
+                        <Link to='/'><img src="./assets/images/logo.png" className='hidden_header-logo' alt='logo'/></Link>
                         <div className='burger-content-grid'>
                             <div className='lists-block'>
                                 <ul className='first-burgerList'>
-                                    <li className='burger-list-item'><a href="" className='burger-link'>номера и цены</a>
+                                    <li className='burger-list-item'><Link onClick={() => handleBurger()} to="/rooms" className='burger-link'>номера и цены</Link>
                                     </li>
                                     <li className='burger-list-item'><a href="" className='burger-link'>об отеле</a></li>
                                     <li className='burger-list-item'><a href="" className='burger-link'>фото отеля</a></li>

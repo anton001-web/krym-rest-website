@@ -66,7 +66,8 @@ module.exports = {
         ]
     },
     devServer: {
-        port: 8686
+        port: 8686,
+        historyApiFallback: true,
     },
     plugins: [
         new HtmlPlugin({

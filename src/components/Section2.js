@@ -1,27 +1,23 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper";
+import {rooms} from "../data/roomsData";
 
 import 'swiper/scss';
 
-const rooms = [
-    {type: 'lux', area: 40, people: 4, view: 'Море', img: './assets/images/luxRoom.png'},
-    {type: 'standart', area: 18, people: 2, view: 'Терасса', img: './assets/images/standartRoom.png'},
-    {type: 'deluxe', area: 36, people: 4, view: 'Горы', img: './assets/images/deluxRoom.png'},
-]
 
 const Section2 = () => {
     return (
         <section className='rooms-list__section'>
             <div className='container'>
                 <div className="rooms-list__section-body">
-                    <div className='rooms-list__title-block'>
-                        <img src="./assets/images/secTitleL.png" className='rooms-list__imgL-tit'/>
+                    <div className='rooms-list__title-block title-block'>
+                        <img src="./assets/images/secTitleL.png" className='rooms-list__imgL-tit imgLeft-title'/>
                         <span>
                             <h1 className='title'>Номера</h1>
-                            <h2 className='rooms-list__subTitle'>Выберите свой номер</h2>
+                            <h2 className='rooms-list__subTitle section-subTitle'>Выберите свой номер</h2>
                         </span>
-                        <img className='rooms-list__imgR-tit' src="./assets/images/secTitleR.png" alt=""/>
+                        <img className='rooms-list__imgR-tit imgRight-title' src="./assets/images/secTitleR.png" alt=""/>
                     </div>
                     <div className='rooms-list__block'>
                         <Swiper

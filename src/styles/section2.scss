@@ -6,44 +6,10 @@
   padding: $gutter-default;
 }
 
-.rooms-list__title-block {
-  display: flex;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-
-.rooms-list__title-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 70px;
-
-  span {
-    text-align: center;
-  }
-}
-
-.rooms-list__imgL-tit {
-  width: 17%;
-  object-fit: cover;
-
-}
-.rooms-list__imgR-tit {
-  width: 17%;
-  object-fit: cover;
-}
-
-.rooms-list__subTitle {
-  margin-top: 15px;
-  @include fontz('OpenSans', 400, 30px, normal);
-  color: $main-black;
-}
-
 .rooms-list__room {
   background: #F5F5F5;
   border-radius: 50px 50px 0px 0px;
-  padding: $gutter-default;
+  padding: 15px;
 
   img {
     border-radius: 50px 50px 0px 0px;

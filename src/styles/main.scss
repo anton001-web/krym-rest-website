@@ -5,8 +5,20 @@
 
 
 @import './header.scss';
+
+.imgLeft-title {
+  width: 17%;
+  object-fit: cover;
+}
+
+.imgRight-title {
+  width: 17%;
+  object-fit: cover;
+}
+
 @import './section1.scss';
 @import './section2.scss';
+@import './roomPage.scss';
 
 .container {
   max-width: $container-w;
@@ -54,6 +66,28 @@ html.scroll-active {
   }
 }
 
+.title-block {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  display: flex;
+  max-width: 600px;
+  justify-content: space-between;
+  align-items: center;;
+
+  span {
+    text-align: center;
+  }
+}
+
+
+.section-subTitle {
+  margin-top: 15px;
+  @include fontz('OpenSans', 400, 30px, normal);
+  color: $main-black;
+}
+
+
 .title {
   @include fontz('Forum', 400, 50px, normal);
   color: $main-black;
@@ -63,9 +97,14 @@ html.scroll-active {
 @import './media/header-media.scss';
 @import './media/section1-media.scss';
 @import './media/section2-media.scss';
+@import './media/roomPage-media.scss';
 
 @media screen and (max-width: 767px) {
   .title {
-    font-size: 38px;
+    font-size: 35px;
+  }
+
+  .section-subTitle {
+    font-size: 20px;
   }
 }

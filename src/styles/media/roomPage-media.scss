@@ -1,0 +1,16 @@
+@media screen and (max-width: 968px) {
+  .room-page_book-room__btn, .room-page_detail-room__btn {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .room-page__rooms-list {
+    grid-template-columns: 1fr;
+  }
+
+  .room-page__search-block {
+    display: none;
+  }
+}

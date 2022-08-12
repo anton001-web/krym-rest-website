@@ -81,27 +81,31 @@
   }
 
   .rooms-swiper {
-    overflow: visible !important;
+    //overflow: visible !important;
   }
 
   .rooms-swiper
   .swiper-button-next {
     padding: 10px;
     background-size: 20px;
-    right: -20px;
+    right: 0px;
   }
 
   .rooms-swiper
   .swiper-button-prev {
     padding: 10px;
     background-size: 20px;
-    left: -20px;
+    left: 0px;
   }
 
   .rooms-list__room-info__block {
     span {
       margin-bottom: 5px;
     }
+  }
+
+  .rooms-swiper {
+    padding: 30px !important;
   }
 }
 

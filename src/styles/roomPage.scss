@@ -1,0 +1,56 @@
+.room-page__content {
+
+}
+
+.room-page__title-block {
+  margin-top: 100px;
+}
+
+.room-page__search {
+  padding: $gutter-default;
+  background-image: url('../assets/images/swPool.png');
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.room-page__search-block {
+  max-width: 730px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.room-page__room-list {
+
+}
+
+.room-page__rooms-list__block {
+  padding: $gutter-default;
+}
+
+.room-page__rooms-list {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-gap: $gutter-default;
+  grid-template-columns: 1fr 1fr;
+}
+
+.room-page_book-room__btn {
+  @extend %book-btn-filled;
+}
+
+.room-page_detail-room__btn {
+  @extend %book-btn-outline;
+}
+
+.room-page_room_btns {
+  display: flex;
+  justify-content: space-between;
+}
