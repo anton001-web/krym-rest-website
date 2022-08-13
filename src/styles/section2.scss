@@ -18,6 +18,10 @@
   }
 }
 
+.rooms-list__block {
+  position: relative;
+}
+
 .rooms-list__room-info__block {
   padding-top: 20px;
   display: flex;
@@ -49,47 +53,23 @@
   padding: 0px 10px;
 }
 
-.rooms-swiper
-.swiper-button-prev {
+.swiper-button-next-rooms {
+  @extend %swiper-btn-next;
   position: absolute;
-  top: 45%;
+  top: 44%;
+  left: 31.5%;
   z-index: 10;
-  left: 30.7%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  padding: 20px;
-  background-color: $main-orange;
-  background-image: url("../assets/images/left-arrow.png");
-  background-size: 40px;
-  background-position: 10px;
-  background-repeat: no-repeat;
-  cursor: pointer;
+
 }
 
-.rooms-swiper
-.swiper-button-next {
+.swiper-button-prev-rooms {
   position: absolute;
-  top: 45%;
   z-index: 10;
-  right: 30.7%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  padding: 20px;
-  background-color: $main-orange;
-  background-image: url("../assets/images/right-arrow.png");
-  background-size: 40px;
-  background-position: 10px;
-  background-repeat: no-repeat;
+  @extend %swiper-btn-prev;
+  top: 44%;
+  right: 31.5%;
 }
+
 
 .room-btns {
   margin-top: $gutter-default;

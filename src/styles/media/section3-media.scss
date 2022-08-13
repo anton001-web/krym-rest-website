@@ -1,0 +1,71 @@
+@media screen and (max-width: 1240px) {
+  .hotel-detail__info {
+    font-size: 28px;
+  }
+
+  .hotel-detail__title {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .hotel-detail__btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .hotel-detail__info {
+    font-size: 20px;
+  }
+
+  .hotel-detail__title {
+    font-size: 20px;
+    margin-left: 6px;
+  }
+
+  .hotel-detail__btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hotel-detail__info {
+    font-size: 28px;
+  }
+
+  .hotel-detail__title {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .hotel-detail__btn {
+    font-size: 16px;
+  }
+
+  .hotel-details__content {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel-detail__btn-text {
+    display: none;
+  }
+
+  .hotel-detail__hidden-btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hotel-detail__info {
+    font-size: 21px;
+  }
+
+  .hotel-detail__title {
+    font-size: 21px;
+    margin-left: 7px;
+  }
+
+  .hotel-detail__btn {
+    font-size: 15px;
+  }
+}

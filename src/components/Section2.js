@@ -27,7 +27,10 @@ const Section2 = () => {
                                     slidesPerView: 3
                                 }
                             }}
-                            navigation
+                            navigation={{
+                                prevEl: '.swiper-button-next-rooms',
+                                nextEl: '.swiper-button-prev-rooms',
+                            }}
                             slidesPerView={1}
                             spaceBetween={30}
                             className='rooms-swiper'
@@ -55,6 +58,8 @@ const Section2 = () => {
                                 ))
                             }
                         </Swiper>
+                        <button className='swiper-button-next-rooms'></button>
+                        <button className='swiper-button-prev-rooms'></button>
                     </div>
                 </div>
             </div>

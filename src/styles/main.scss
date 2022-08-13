@@ -18,6 +18,7 @@
 
 @import './section1.scss';
 @import './section2.scss';
+@import './section3.scss';
 @import './roomPage.scss';
 
 .container {
@@ -91,12 +92,15 @@ html.scroll-active {
 .title {
   @include fontz('Forum', 400, 50px, normal);
   color: $main-black;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 
 @import './media/header-media.scss';
 @import './media/section1-media.scss';
 @import './media/section2-media.scss';
+@import './media/section3-media.scss';
 @import './media/roomPage-media.scss';
 
 @media screen and (max-width: 767px) {

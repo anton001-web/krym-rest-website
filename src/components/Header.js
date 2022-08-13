@@ -40,7 +40,7 @@ const Header = () => {
                             <span className='burger-open__bar'></span>
                             <span className='burger-open__bar'></span>
                         </button>
-                        <Link to='/'><img src="./assets/images/logo.png" className='header-logo' alt='logo'/></Link>
+                        <Link to='/' onClick={() => handleBurger()}><img src="./assets/images/logo.png" className='header-logo' alt='logo'/></Link>
                     </div>
                     <div className='circleLogo-block'>
                         <img src="../assets/images/circleLogo.png" alt="logo" className='circleLogo'/>

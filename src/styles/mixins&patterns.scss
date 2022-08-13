@@ -36,3 +36,26 @@
   color: #fff;
   padding: 10px 45px;
 }
+
+%swiper-btn-next {
+  margin-right: 15px;
+  border: 1px solid $main-blue;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  background-image: url("../assets/images/left-arrow.png");
+  background-size: 20px;
+  background-position: 9px;
+  background-repeat: no-repeat;
+}
+
+%swiper-btn-prev {
+  background-color: #fff;
+  border: 1px solid $main-blue;
+  border-radius: 50%;
+  padding: 20px;
+  background-image: url("../assets/images/right-arrow.png");
+  background-size: 20px;
+  background-position: 9px;
+  background-repeat: no-repeat;
+}

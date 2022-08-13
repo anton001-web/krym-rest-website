@@ -1,0 +1,101 @@
+.hotel-details__body {
+  padding: $gutter-default;
+}
+
+.hotel-details__title {
+  padding-bottom: 70px;
+}
+
+.hotel-details__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hotel_details__img {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  img {
+    width: 100%;
+    object-it: cover;
+  }
+}
+
+.hotel-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hotel-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 2px solid $main-blue;
+}
+
+.hotel-detail__info {
+  display: flex;
+  align-items: center;
+  @include fontz('Forum', 400, 38px, normal);
+  text-transform: uppercase;
+}
+
+.hotel-detail__title {
+  margin-left: 25px;
+}
+
+.details_swiper {
+  width: 90%;
+}
+
+.details_swiper
+.swiper-wrapper {
+  max-height: 310px;
+}
+
+.hotel-detail__btn {
+  transition: color .4s;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  @include fontz('OpenSans', 400, 18px, normal);
+  color: $main-blue;
+
+  &:hover {
+    color: $main-orange;
+  }
+}
+
+.detail-swiper__controls {
+  padding: $gutter-default;
+  align-self: start;
+}
+
+.swiper-button-next-details {
+  @extend %swiper-btn-next
+}
+
+.swiper-button-prev-details {
+  @extend %swiper-btn-prev;
+}
+
+.details_swiper
+.swiper-button-prev {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  padding: 20px;
+  background-image: url("../assets/images/left-arrow.png");
+  background-size: 30px;
+  background-position: 5px;
+  background-repeat: no-repeat;
+  bottom: -20px;
+}
+
+.hotel-detail__hidden-btn {
+  display: none;
+}
