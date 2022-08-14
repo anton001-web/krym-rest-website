@@ -8,7 +8,7 @@ import 'swiper/scss';
 
 const Section2 = () => {
     return (
-        <section className='rooms-list__section'>
+        <section className='rooms-list__section section'>
             <div className='container'>
                 <div className="rooms-list__section-body">
                     <div className='rooms-list__title-block title-block'>

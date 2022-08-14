@@ -1,0 +1,70 @@
+.vacation-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vacation-section__body {
+  padding: $gutter-default;
+}
+
+.vacations-switches {
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: $gutter-default;
+  display: flex;
+}
+
+.vacation-switch {
+  @extend %book-btn-outline;
+  padding: 10px 30px;
+
+  &[data-active='true'] {
+    @extend %book-btn-filled;
+    padding: 10px 30px;
+  }
+
+  &[data-type='extreme'] {
+    margin-right: 0px;
+  }
+}
+
+.vacation-list {
+  margin-top: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  display: grid;
+}
+
+.vac-img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+
+.vacation {
+  position: relative;
+}
+
+.vacation-btn-block {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  @extend %vacation-btn;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.vacation[data-pos='one'] {
+  grid-column: 1/3;
+}
+
+.vacation[data-pos='four'] {
+  grid-column: 2/4;
+}

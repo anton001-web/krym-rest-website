@@ -13,7 +13,7 @@ const hotelDetails = [
 
 const Section3 = () => {
     return (
-        <section className='hotel-details__section'>
+        <section className='hotel-details__section section'>
             <div className='container'>
                 <div className='hotel-details__body'>
                     <h1 className='hotel-details__title title'>вам понравится у нас</h1>

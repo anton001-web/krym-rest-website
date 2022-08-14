@@ -59,3 +59,23 @@
   background-position: 9px;
   background-repeat: no-repeat;
 }
+
+%vacation-btn {
+  @include fontz('OpenSans', 400, 14px, normal);
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 40px 0px 0px 0px;
+}
+
+.vac-btn-more {
+  background-color: $main-orange;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 10px;
+}

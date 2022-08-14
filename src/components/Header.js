@@ -26,10 +26,6 @@ const Header = () => {
         }
     }, [visible])
 
-    const menuDisable = () => {
-
-    }
-
     return (
         <header className='header'>
             <div className='container'>
@@ -40,7 +36,7 @@ const Header = () => {
                             <span className='burger-open__bar'></span>
                             <span className='burger-open__bar'></span>
                         </button>
-                        <Link to='/' onClick={() => handleBurger()}><img src="./assets/images/logo.png" className='header-logo' alt='logo'/></Link>
+                        <Link to='/'><img src="./assets/images/logo.png" className='header-logo' alt='logo'/></Link>
                     </div>
                     <div className='circleLogo-block'>
                         <img src="../assets/images/circleLogo.png" alt="logo" className='circleLogo'/>
@@ -54,7 +50,7 @@ const Header = () => {
                 <div className='container'>
                     <div className='burger-content'>
                         <button className='burger-close__btn' onClick={() => handleBurger()}>&times;</button>
-                        <Link to='/'><img src="./assets/images/logo.png" className='hidden_header-logo' alt='logo'/></Link>
+                        <Link to='/' onClick={() => handleBurger()}><img src="./assets/images/logo.png" className='hidden_header-logo' alt='logo'/></Link>
                         <div className='burger-content-grid'>
                             <div className='lists-block'>
                                 <ul className='first-burgerList'>
@@ -75,8 +71,8 @@ const Header = () => {
                                         </li>
                                         <li className='burger-list-item'><a href="" className='burger-link'>паста-бар</a>
                                         </li>
-                                        <li className='burger-list-item'><a href="" className='burger-link'>активынй
-                                            отдых</a></li>
+                                        <li className='burger-list-item'><Link to="/rest" className='burger-link' onClick={() => handleBurger()}>активный
+                                            отдых</Link></li>
                                         <li className='burger-list-item'><a href=""
                                                                             className='burger-link'>спецпредложения</a></li>
                                     </div>

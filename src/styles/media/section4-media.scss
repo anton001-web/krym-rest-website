@@ -1,0 +1,12 @@
+@media screen and (max-width: 996px) {
+  .vac-img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .vacation-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
