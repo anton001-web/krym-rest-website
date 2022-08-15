@@ -8,6 +8,9 @@ import {BrowserRouter as Router} from "react-router-dom";
 import Undefined from "./components/pages/Undefined";
 import Rooms from "./components/pages/Rooms";
 import RestPage from "./components/pages/RestPage";
+import AccommodationDiscPage from "./components/pages/AccommodationDiscPage";
+import ServiceOffPage from "./components/pages/ServiceOffPage";
+import PhotoshootOffPage from "./components/pages/PhotoshootOffPage";
 
 const App = () => {
     return (
@@ -16,6 +19,9 @@ const App = () => {
             <Routes>
                 <Route path='/rooms' exact element={<Rooms />} />
                 <Route path='/rest' exact element={<RestPage />} />
+                <Route path='/accommodation-discount' exact element={<AccommodationDiscPage />} />
+                <Route path='/service-surp' exact element={<ServiceOffPage />} />
+                <Route path='/photoshoot' exact element={<PhotoshootOffPage />} />
                 <Route path='/' exact element={<Main />} />
                 <Route path='*' exact element={<h1>page doesnt exist</h1>} />
             </Routes>

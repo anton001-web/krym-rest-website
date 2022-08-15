@@ -1,0 +1,23 @@
+@media screen and (max-width: 996px) {
+  .offer-date, .offer-title {
+    margin-bottom: 10px;
+  }
+
+  .offer-title {
+    font-size: 24px;
+  }
+
+  .offer-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .offer-block {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-offer__list {
+    height: 1540px;
+  }
+}

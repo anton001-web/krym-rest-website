@@ -1,0 +1,42 @@
+@media screen and (max-width: 996px) {
+  .offer-date-to {
+    font-size: 18px;
+  }
+
+  .offer-text-sec, .offer-condition-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .offer-page__body {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-info__block {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .offer-input {
+    width: auto;
+  }
+
+  .offer-form {
+    padding: 20px;
+  }
+
+  .offer-submit__btn {
+    padding: 10px 30px;
+  }
+
+  .offer-page__body {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-info__block {
+    margin-right: 0px;
+  }
+}

@@ -6,7 +6,8 @@
 }
 
 %section-title {
-  @include fontz('OpenSans', 400, 50px, normal)
+  @include fontz('OpenSans', 400, 50px, normal);
+  color: $main-black;
 }
 
 %book-btn-outline {
@@ -21,6 +22,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+%more-btn {
+  @include fontz('OpenSans', 400, 50px, normal);
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main-blue;
+  background-color: #fff;
 }
 
 %book-btn-filled {

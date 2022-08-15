@@ -1,0 +1,98 @@
+.offer-img__block {
+  img {
+    min-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.offer-page__body {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+}
+
+.offer-info__block {
+  padding: 30px;
+  border-radius: 0px 40px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  bottom: 60px;
+}
+
+.offer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.offer-title {
+  max-width: 670px;
+  text-align: start !important;
+}
+
+.offer-date-to {
+  @include fontz('OpenSans', 400, 24px, normal);
+  color: $main-blue;
+}
+
+.offer-text-sec {
+  margin-top: $gutter-default;
+  @include fontz('OpenSans', 400, 16px, normal);
+  color: $main-black;
+}
+
+.offer-condition-title {
+  text-transform: uppercase;
+  margin-top: $gutter-default;
+  @include fontz('Forum', 400, 32px, normal);
+  color: $main-black;
+}
+
+.offer-condition-text {
+  margin-top: 10px;
+  @include fontz('OpenSans', 400, 16px, normal);
+  color: $main-black;
+}
+
+.offer-form__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $gutter-default;
+}
+
+.offer-form {
+  padding: $gutter-default;
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-input {
+  outline: none;
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 20px;
+  border: none;
+}
+
+.offer-phone__input {
+  &::placeholder {
+    background: url("../assets/images/inputPhone.png") no-repeat;
+    padding: 5px 35px;
+  }
+}
+
+.offer-name__input {
+  &::placeholder {
+    background: url("../assets/images/inputName.png") no-repeat;
+    padding: 5px 35px;
+  }
+}
+
+.offer-submit__btn {
+  @extend %book-btn-filled;
+}
