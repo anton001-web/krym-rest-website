@@ -92,3 +92,22 @@
   font-size: 25px;
   margin-left: 10px;
 }
+
+%company-phone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $main-blue;
+  @include fontz('OpenSans', 400, 20px, normal);
+
+  img {
+    margin-right: 15px;
+  }
+}
+
+%link {
+  @include fontz('OpenSans', 400, 20px, normal);
+  color: $second-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

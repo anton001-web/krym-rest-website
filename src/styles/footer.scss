@@ -1,0 +1,91 @@
+.footer-block {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #F5F5F5;
+}
+
+.footer-body {
+  padding: $gutter-default;
+}
+
+.footer-block {
+  border-top: 2px solid $main-blue;
+  padding-top: $gutter-default;
+}
+
+.footer-top {
+  display: flex;
+
+}
+
+.footer-company__phone {
+  @extend %company-phone;
+}
+
+.footer-company__info-block {
+  max-width: 460px;
+}
+
+.footer-company__phone {
+  margin-bottom: 20px;
+}
+
+.footer-company__info {
+  text-transform: uppercase;
+  @include fontz('OpenSans', 400, 20px, normal);
+  color: $main-black;
+}
+
+.footer-logo {
+  margin-right: 70px;
+  height: 100%;
+}
+
+.footer-first__list {
+  margin: 0px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-first__list-item, .footer-second__list-item {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  margin-bottom: 15px;
+  font-size: 16px;
+  @extend %link;
+}
+
+.footer-bottom {
+  margin-top: $gutter-default;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.footer-c {
+  @include fontz('OpenSans', 400, 12px, normal);
+  color: $second-black;
+}
+
+.footer-icons__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.footer-toggle {
+  display: none;
+  background-color: inherit;
+}

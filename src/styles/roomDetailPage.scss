@@ -1,0 +1,90 @@
+.room-d__header {
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.room-d__title-block {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 40px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.room-d__desc-list {
+  margin-top: 100px;
+}
+
+.room-d__desc-item {
+  padding: $gutter-default;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: $gutter-default;
+  border-bottom: 2px solid $main-blue;
+}
+
+.room-d__desc-title {
+  text-transform: uppercase;
+  color: $main-blue;
+  @include fontz('Forum', 400, 28px, normal);
+}
+
+.room-desc {
+  color: $main-black;
+  @include fontz('OpenSans', 400, 18px, normal);
+}
+
+.room-d__gallery-block {
+  margin-top: 100px;
+}
+
+.room-d__gallery {
+
+}
+
+.room-d__gallery-item {
+  padding: $gutter-default;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &[data-top='true'] {
+    align-items: start;
+    img {
+      width: 80%;
+    }
+  }
+
+  img {
+    border-radius: 80px 80px 0px 0px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.room-gallery__swiper .swiper-pagination {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+
+  .swiper-pagination-bullet {
+    border-radius: 50%;
+    border: 1px solid $main-blue;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 10px;
+
+    &.swiper-pagination-bullet-active {
+      background-color: $main-orange;
+      border: none;
+    }
+  }
+}

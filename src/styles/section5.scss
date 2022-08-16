@@ -1,17 +1,33 @@
+.special-offer__section {
+  margin-bottom: 200px;
+}
+
 .spec-offer__list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
   row-gap: $gutter-default;
 
   &.list-active {
-   height: auto;
+   .offer-block[data-hidden='true'] {
+     opacity: 1;
+     visibility: visible;
+     height: auto;
+     padding: 30px;
+   }
   }
 }
 
+.offer-block[data-hidden='true'] {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+}
+
 .offer-block {
+  transition: all .4s;
   border-bottom: 2px solid $main-blue;
-  padding: 80px;
+  padding: $gutter-default;
   display: grid;
   grid-template-columns: .8fr 1fr;
   column-gap: $gutter-default;
@@ -61,6 +77,6 @@
 .see-more__btn {
   padding: 0;
   @extend %more-btn;
-  margin: 0 auto;
+  margin: 40px auto;
   text-decoration: underline;
 }

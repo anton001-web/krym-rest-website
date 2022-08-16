@@ -31,7 +31,7 @@ const Section5 = () => {
                     <div className='spec-offer__list' ref={offerListRef}>
                         {
                             specOffersData.map((offer, ind) => (
-                                <div className='offer-block'>
+                                <div className='offer-block' data-hidden={offer.hidden}>
                                     <div className='offer-img'>
                                         <img src={offer.img} alt="image"/>
                                     </div>

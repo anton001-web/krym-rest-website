@@ -23,6 +23,8 @@
 @import './section5.scss';
 @import './roomPage.scss';
 @import './restPage.scss';
+@import './roomDetailPage.scss';
+@import './footer.scss';
 @import './discountPages.scss';
 
 .container {
@@ -37,6 +39,7 @@ button {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 ul {
@@ -112,7 +115,9 @@ html.scroll-active {
 @import './media/section5-media.scss';
 @import './media/roomPage-media.scss';
 @import './media/restPage-media.scss';
+@import './media/roomDetailPage-media.scss';
 @import './media/discountPage-media.scss';
+@import 'media/footer-media.scss';
 
 @media screen and (max-width: 767px) {
   .title {

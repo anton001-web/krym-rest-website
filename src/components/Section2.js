@@ -4,6 +4,7 @@ import {Navigation} from "swiper";
 import {rooms} from "../data/roomsData";
 
 import 'swiper/scss';
+import {Link} from "react-router-dom";
 
 
 const Section2 = () => {
@@ -51,7 +52,7 @@ const Section2 = () => {
                                             </div>
                                             <div className='room-btns'>
                                                 <button className='book-room__btn rooms-list__btn'>забронировать</button>
-                                                <button className='detail-room__btn rooms-list__btn'>подробнее</button>
+                                                <button className='detail-room__btn rooms-list__btn'><Link to={room.page}>подробнее</Link></button>
                                             </div>
                                         </div>
                                     </SwiperSlide>

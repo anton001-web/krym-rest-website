@@ -1,0 +1,52 @@
+@media screen and (max-width: 996px) {
+  .footer-icons__list {
+    display: none;
+  }
+
+  .footer-first__list {
+    margin: 0px 20px;
+  }
+
+  .footer-company__info {
+    font-size: 14px;
+  }
+
+  .footer-company__phone {
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    margin-right: 35px;
+  }
+
+  .footer-link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-company__info-block {
+    margin-bottom: $gutter-default;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-first__list {
+    margin: 0px 0;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: start;
+
+    .footer-c {
+      margin-top: 10px;
+    }
+  }
+}
