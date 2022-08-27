@@ -1,0 +1,58 @@
+.news-section__body {
+  padding: $gutter-default;
+}
+
+.news-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.news-list__item {
+  column-gap: $gutter-default;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: $gutter-default;
+}
+
+.news-list__item-img__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.news-list__item-text__block {
+  display: flex;
+  flex-direction: column;
+
+  &[data-pos='1'] {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.news-list__item-title {
+  text-transform: uppercase;
+  @include fontz('Forum', 400, 30px, normal);
+  color: $second-black;
+}
+
+.news-list__item-text {
+  display: block;
+  margin-top: 30px;
+  @include fontz('OpenSans', 400, 18px, normal);
+  color: $second-black;
+}
+
+.news-list__link {
+  margin-top: 20px;
+  text-decoration: none;
+  width: fit-content;
+  border: none;
+  padding: 0;
+  @extend %book-btn-outline
+}

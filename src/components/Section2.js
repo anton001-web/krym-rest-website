@@ -8,6 +8,10 @@ import {Link} from "react-router-dom";
 
 
 const Section2 = () => {
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
+    }
+
     return (
         <section className='rooms-list__section section'>
             <div className='container'>
@@ -52,7 +56,7 @@ const Section2 = () => {
                                             </div>
                                             <div className='room-btns'>
                                                 <button className='book-room__btn rooms-list__btn'>забронировать</button>
-                                                <button className='detail-room__btn rooms-list__btn'><Link to={room.page}>подробнее</Link></button>
+                                                <Link onClick={scrollTop} className='detail-room__btn rooms-list__btn' to={room.page}>подробнее</Link>
                                             </div>
                                         </div>
                                     </SwiperSlide>

@@ -48,6 +48,7 @@
 
 .room-page_detail-room__btn {
   @extend %book-btn-outline;
+  text-decoration: none;
 }
 
 .room-page_room_btns {

@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+  .news-list__item {
+    grid-template-columns: 1fr;
+    row-gap: $gutter-default;
+  }
+
+  .news-list__item-text__block {
+    &[data-pos='1'] {
+      grid-row: 2;
+    }
+  }
+
+  .news-list__item-title {
+    font-size: 26px;
+  }
+
+  .news-list__item-text {
+    font-size: 16px;
+  }
+}

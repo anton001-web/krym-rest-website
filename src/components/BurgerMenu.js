@@ -15,6 +15,7 @@ const BurgerMenu = forwardRef((props, ref) => {
                                 </li>
                                 <li className='burger-list-item'><a href="" className='burger-link'>об отеле</a></li>
                                 <li className='burger-list-item'><a href="" className='burger-link'>фото отеля</a></li>
+                                <li className='burger-list-item'><Link onClick={() => props.handleBurger()} to="/news" className='burger-link'>новости</Link></li>
                                 <li className='burger-list-item'><a href="" className='burger-link'>как добраться</a>
                                 </li>
                                 <li data-nm className='burger-list-item'><a href="" className='burger-link'>отзывы
@@ -23,14 +24,9 @@ const BurgerMenu = forwardRef((props, ref) => {
                             </ul>
                             <ul className='second-burgerList'>
                                 <div>
-                                    <li className='burger-list-item'><a href=""
-                                                                        className='burger-link'>достопримечательности</a>
-                                    </li>
-                                    <li className='burger-list-item'><a href="" className='burger-link'>паста-бар</a>
-                                    </li>
                                     <li className='burger-list-item'><Link to="/rest" className='burger-link' onClick={() => props.handleBurger()}>активный
                                         отдых</Link></li>
-                                    <li className='burger-list-item'><a href=""
+                                    <li className='burger-list-item'><a href="#spec-offer"
                                                                         className='burger-link'>спецпредложения</a></li>
                                 </div>
                                 <button className='burger-order-btn'>забронировать</button>

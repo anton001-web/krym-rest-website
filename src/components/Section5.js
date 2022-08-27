@@ -17,8 +17,12 @@ const Section5 = () => {
         }
     }
 
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
+    }
+
     return (
-        <section className='special-offer__section section'>
+        <section className='special-offer__section section' id='spec-offer'>
             <div className='container'>
                 <div className='special-offer__section-body'>
                     <div className='spec-offer__title-block title-block'>
@@ -41,7 +45,7 @@ const Section5 = () => {
                                             <h2 className='offer-title'>{offer.title}</h2>
                                             <p className='offer-text'>{offer.text}</p>
                                         </div>
-                                        <Link to={offer.to} className='offer-btn'>
+                                        <Link onClick={scrollTop} to={offer.to} className='offer-btn'>
                                             подробнее
                                         </Link>
                                     </div>

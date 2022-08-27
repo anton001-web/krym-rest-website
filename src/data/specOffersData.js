@@ -1,6 +1,6 @@
 export const specOffersData = [
     {
-        to: '/accommodation-discount',
+        to: '/offers/accommodation',
         type: 'accommodation',
         title: 'скидка на проживание 10% от 5 суток',
         img: './assets/images/specOffer1.png',
@@ -9,7 +9,7 @@ export const specOffersData = [
         offerCondText: 'Мы обоснованно гордимся отличной материально-технической базой и можем предложить своим гостям доски лучших мировых брендов: F2, Tabou, Unifiber, Gaastra, Big, Starboard, широкие борды большого литража со швертами для обучения "с нуля", а также доски для продвинутых райдеров, паруса диапазоном от 1,5 до 7,5 м, ат оборудования.',
     },
     {
-        to: '/service-surp',
+        to: '/offers/service',
         type: 'service',
         title: 'Комплимент молодоженам и 1-сутки в подарок',
         img: './assets/images/specOffer2.png',
@@ -18,7 +18,7 @@ export const specOffersData = [
         offerCondText: 'Мы обоснованно гордимся отличной материально-технической базой и можем предложить своим гостям доски лучших мировых брендов: F2, Tabou, Unifiber, Gaastra, Big, Starboard, широкие борды большого литража со швертами для обучения "с нуля", а также доски для продвинутых райдеров, паруса диапазоном от 1,5 до 7,5 м, ат оборудования.',
     },
     {
-        to: '/photoshoot',
+        to: '/offers/photoshoot',
         type: 'photoshoot',
         title: 'Фотосессия в подарок при оплате 10 суток',
         img: './assets/images/specOff3.png',
@@ -27,7 +27,7 @@ export const specOffersData = [
         offerCondText: 'Мы обоснованно гордимся отличной материально-технической базой и можем предложить своим гостям доски лучших мировых брендов: F2, Tabou, Unifiber, Gaastra, Big, Starboard, широкие борды большого литража со швертами для обучения "с нуля", а также доски для продвинутых райдеров, паруса диапазоном от 1,5 до 7,5 м, ат оборудования.',
     },
     {
-        to: '/photoshoot',
+        to: '/offers/photoshoot',
         type: 'photoshoot',
         title: 'Фотосессия в подарок при оплате 10 суток',
         img: './assets/images/specOff3.png',
@@ -37,7 +37,7 @@ export const specOffersData = [
         hidden: true
     },
     {
-        to: '/photoshoot',
+        to: '/offers/photoshoot',
         type: 'photoshoot',
         title: 'Фотосессия в подарок при оплате 10 суток',
         img: './assets/images/specOff3.png',

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {rooms} from "../../data/roomsData";
 import {DatePickerD} from "../DatePicker";
+import {Link} from "react-router-dom";
 
 const Rooms = () => {
     const [dateRange, setDateRange] = useState([null, null]);
@@ -13,6 +14,10 @@ const Rooms = () => {
 
     const decrement = () => {
         setPeopleAmount(peopleAmount - 1)
+    }
+
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
     }
 
     return (
@@ -56,7 +61,7 @@ const Rooms = () => {
                                             </div>
                                             <div className='room-btns room-page_room_btns'>
                                                 <button className='room-page_book-room__btn rooms-list__btn'>забронировать</button>
-                                                <button className='room-page_detail-room__btn rooms-list__btn'>подробнее</button>
+                                                <Link onClick={scrollTop} to={room.page} className='room-page_detail-room__btn rooms-list__btn'>подробнее</Link>
                                             </div>
                                         </div>
                                     ))

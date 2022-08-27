@@ -1,0 +1,135 @@
+.news-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-page__body {
+  padding: $gutter-default;
+}
+
+.news {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-title {
+  align-self: start !important;
+}
+
+.news-text {
+  margin-top: 20px;
+  max-width: 600px;
+  @include fontz('OpenSans', 400, 18px, normal);
+  color: $main-black;
+}
+
+.news-note {
+  @include fontz('OpenSans', 400, 14px, normal);
+  margin-top: 20px;
+  border-left: 3px solid $main-blue;
+  padding: $gutter-default;
+}
+
+.news-list-d {
+  list-style: auto !important;
+  margin-left: 70px;
+}
+
+.news-item {
+  @include fontz('OpenSans', 400, 14px, normal);
+  margin-top: 20px;
+}
+
+.join-img__block {
+  margin-top: $gutter-default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid $main-blue;
+  padding: $gutter-default;
+
+  .join-img__link {
+    content: '';
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: $main-blue;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    @include fontz('OpenSans', 400, 18px, normal);
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+h1.customSt {
+  display: none;
+}
+
+div.customSt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+
+  .news-title {
+    grid-column: 1/3;
+  }
+
+  .fourth-text {
+    grid-column: 1/3;
+  }
+
+  .news-text-custom {
+    grid-column: 1/3;
+  }
+
+}
+
+.custom-title {
+  margin-top: 50px;
+  text-align: start !important;
+  margin-bottom: 10px !important;
+  font-size: 32px !important;
+}
+
+div.custom-five-article {
+  h1.custom-five-article {
+    display: none;
+  }
+
+  column-gap: $gutter-default;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.article-author__block {
+  padding: $gutter-default;
+  border-top: 2px solid $main-blue;
+  border-bottom: 2px solid $main-blue;
+}
+
+.auth-left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-title {
+  @include fontz('OpenSans', 400, 16px, normal);
+  color: #6A6A6A;
+}
+
+.auth {
+  @include fontz('OpenSans', 400, 18px, normal);
+  color: $main-black;
+}

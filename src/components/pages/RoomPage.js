@@ -2,10 +2,15 @@ import React from 'react'
 import {rooms} from "../../data/roomsData";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper";
+import {useParams} from "react-router";
 
 const std = rooms.filter(room => room.type === 'standart')
 
 const StdRoomPage = () => {
+    const params = useParams()
+
+    const std = rooms.filter(room => room.type === params.roomType)
+
     const pagination = {
         clickable: true,
         renderBullet: function (index, className) {
@@ -20,7 +25,7 @@ const StdRoomPage = () => {
                     <div className='room-d__header'>
                         <img src={std[0].fullImg} alt=""/>
                         <div className='room-d__title-block'>
-                            <h1 className='room-d__title title'>Стандартная комната</h1>
+                            <h1 className='room-d__title title'>{std[0].pageTitle}</h1>
                         </div>
                     </div>
                     <div className='room-d__desc-list'>

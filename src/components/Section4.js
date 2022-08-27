@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
 import {restData} from "../data/restData";
+import {Link} from "react-router-dom";
 
 
 const Section4 = () => {
@@ -8,6 +9,10 @@ const Section4 = () => {
 
     const changeVacation = (event) => {
         setCurrentType(event.target.dataset.type)
+    }
+
+    const scrolTop = () => {
+        window.scrollTo(0, 0)
     }
 
     return (
@@ -29,7 +34,7 @@ const Section4 = () => {
                                     return (
                                         <div data-pos={vacation.id} className='vacation'>
                                             <img src={vacation.img} alt="img" className='vac-img'/>
-                                            <div className='vacation-btn-block'>{vacation.title} <button className='vac-btn-more'>&#10555;</button></div>
+                                            <div className='vacation-btn-block'>{vacation.title} <Link className='vac-btn-more' onClick={scrolTop} c to={vacation.to}>&#10555;</Link></div>
                                         </div>
                                     )
                                 }

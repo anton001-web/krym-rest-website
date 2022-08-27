@@ -1,23 +1,26 @@
 import React from 'react'
 import {specOffersData} from "../../data/specOffersData";
+import { useParams } from "react-router";
 
-const acco = specOffersData.filter(offer => offer.type === 'service')
 
-const ServiceOffPage = () => {
+const OfferPage = () => {
+    const params = useParams()
+    const offerData = specOffersData.filter(data => data.type === params.offerCategory)
+
     return (
-        <section className='service-offer__page'>
+        <section className='accommodation-discount__page'>
             <div className='container'>
-                <div className='service-offer__img-block offer-img__block'>
+                <div className='accommodation-page__img-block offer-img__block'>
                     <img src="./assets/images/accoDiscPage.png" alt="img"/>
                 </div>
-                <div className='service-offer__body offer-page__body'>
+                <div className='accommodation-page__body offer-page__body'>
                     <div className='offer-info__block'>
                         <div className='offer-info'>
-                            <h1 className='offer-title title'>{acco[0].title}</h1>
+                            <h1 className='offer-title title'>{offerData[0].title}</h1>
                             <span className='offer-date-to'>Предложение действительно до 20 июля 2022 г.</span>
-                            <p className='offer-text-sec'>{acco[0].offerText}</p>
+                            <p className='offer-text-sec'>{offerData[0].offerText}</p>
                             <span className='offer-condition-title'>условия участия</span>
-                            <p className='offer-condition-text'>{acco[0].offerCondText}</p>
+                            <p className='offer-condition-text'>{offerData[0].offerCondText}</p>
                         </div>
                     </div>
                     <div className='offer-form__block'>
@@ -33,4 +36,4 @@ const ServiceOffPage = () => {
     )
 }
 
-export default ServiceOffPage;
+export default OfferPage;

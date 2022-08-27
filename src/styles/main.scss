@@ -23,7 +23,10 @@
 @import './section5.scss';
 @import './roomPage.scss';
 @import './restPage.scss';
+@import './restExPage.scss';
+@import './newsMain.scss';
 @import './roomDetailPage.scss';
+@import './news.scss';
 @import './footer.scss';
 @import './discountPages.scss';
 
@@ -88,6 +91,16 @@ html.scroll-active {
   }
 }
 
+.wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
 
 .section-subTitle {
   margin-top: 15px;
@@ -115,8 +128,11 @@ html.scroll-active {
 @import './media/section5-media.scss';
 @import './media/roomPage-media.scss';
 @import './media/restPage-media.scss';
+@import './media/restExPage-media.scss';
+@import './media/news-media.scss';
 @import './media/roomDetailPage-media.scss';
 @import './media/discountPage-media.scss';
+@import './media/newsMain-media.scss';
 @import 'media/footer-media.scss';
 
 @media screen and (max-width: 767px) {

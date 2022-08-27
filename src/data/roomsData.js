@@ -1,7 +1,8 @@
 export const rooms = [
     {
+        pageTitle: 'люкс комната',
         fullImg: './assets/images/stdFullImg.png',
-        page: '/lux',
+        page: '/rooms/lux',
         type: 'lux',
         area: 40,
         people: 4,
@@ -18,10 +19,11 @@ export const rooms = [
         ],
     },
     {
+        pageTitle: 'стагдартная комната',
         galleryImgOne: './assets/images/addtSdt2.png',
         galleryImgTwo: './assets/images/addtSdt1.png',
         fullImg: './assets/images/stdFullImg.png',
-        page: '/standart',
+        page: '/rooms/standart',
         type: 'standart',
         area: 18,
         people: 2,
@@ -36,10 +38,11 @@ export const rooms = [
         ],
     },
     {
+        pageTitle: 'делюкс комната',
         galleryImgOne: './assets/images/addtSdt2.png',
         galleryImgTwo: './assets/images/addtSdt1.png',
         fullImg: './assets/images/stdFullImg.png',
-        page: '/deluxe',
+        page: '/rooms/deluxe',
         type: 'deluxe',
         area: 36,
         people: 4,
@@ -54,7 +57,7 @@ export const rooms = [
         ],
     },
     {
-        page: '/standart',
+        page: '/rooms/standart',
         type: 'standart',
         area: 36,
         people: 4,
@@ -62,7 +65,7 @@ export const rooms = [
         img: './assets/images/standart2.png',
     },
     {
-        page: '/deluxe',
+        page: '/rooms/deluxe',
         type: 'deluxe',
         area: 36,
         people: 4,
@@ -70,7 +73,7 @@ export const rooms = [
         img: './assets/images/deluxe2.png'
     },
     {
-        page: '/lux',
+        page: '/rooms/lux',
         type: 'lux',
         area: 36,
         people: 4,
